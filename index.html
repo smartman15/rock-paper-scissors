@@ -18,9 +18,19 @@
             
             // only allow one decimal place
             x = x.toFixed(4);
-            return x;
+            console.log(x);
 
             // create if statements for when math.random() is less than or equal to 0.3, between 0.3 and 0.6, and between 0.6 and 1
+            if (x <= 0.3333){
+                x = "rock";
+                return x;
+            } else if (0.333 < x <= 0.666){
+                x = "paper";
+                return x;
+            } else if (0.666 < x <= 0.999){
+                x = "scissors";
+                return x;
+            }
         }
 
         console.log(getComputerChoice());
