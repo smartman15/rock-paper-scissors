@@ -11,9 +11,11 @@
         // create 2 variables to keep track of players score and computer score
         // create variable humanScore
         // initialize humanScore with value of 0
+        let humanScore = 0;
 
         // create variable computerScore
         // initialize computerScore with value of 0
+        let computerScore = 0;
 
 
         // create function getComputerChoice
@@ -26,7 +28,6 @@
             
             // only allow one decimal place
             x = x.toFixed(4);
-            console.log(x);
 
             // create if statements for when math.random() is less than or equal to 0.3, between 0.3 and 0.6, and between 0.6 and 1
             if (x <= 0.3333){
@@ -41,15 +42,21 @@
             }
         }
 
-        console.log(getComputerChoice());
 
         
         // create function getHumanChoice
         function getHumanChoice(){
             // create x variable and prompt user for choice (rock, paper or scissors)
+            let x = prompt("Please enter your choice (rock, paper or scissors)");
+
             // use toLowerCase() so that prompt is case-insensitive
+            x = x.toLowerCase();
+            
             // return x variable
+            return x;
         }
+
+        console.log(getHumanChoice())
         
         
 
