@@ -73,6 +73,7 @@
                     console.log('you win! rock beats scissors!');
                     return humanScore;
                 }
+
                 // if the computer chose rock, computer wins
                 else if (computerChoice == 'rock'){
                     // increment computerScore by one
@@ -82,6 +83,10 @@
                     // return computerScore
                     return computerScore;
                 } 
+            }
+            // if its scissors vs paper
+            else if ((humanChoice == 'scissors' && computerChoice == 'paper') || (humanChoice == 'paper' && computerChoice == 'scissors')){
+                
             }
             // print out whether you lose or win (ex: you lose! paper beats rock!)
             // increment humanScore or computerScore based on the winner of the round
