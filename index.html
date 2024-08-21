@@ -151,6 +151,8 @@
             let humanScore = 0;
             let computerScore = 0;
 
+            
+
             // Declare playRound function
             function playRound(humanChoice, computerChoice){
                 // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
@@ -235,11 +237,35 @@
                 }
             }
 
+            
+
             // call playRound 5 times
-            playRound();
+            let humanSelection = getHumanChoice();
+            let computerSelection = getComputerChoice();
+            playRound(humanSelection, computerSelection);
+
+            humanSelection = getHumanChoice();
+            computerSelection = getComputerChoice();
+            playRound(humanSelection, computerSelection);
+
+            humanSelection = getHumanChoice();
+            computerSelection = getComputerChoice();
+            playRound(humanSelection, computerSelection);
+
+            humanSelection = getHumanChoice();
+            computerSelection = getComputerChoice();
+            playRound(humanSelection, computerSelection);
+
+            humanSelection = getHumanChoice();
+            computerSelection = getComputerChoice();
+            playRound(humanSelection, computerSelection);
+
+            
             
         }
         // move playRound function and score variables so theyre declared inside playGame function
+
+        playGame();
 
     </script>
 </body>
