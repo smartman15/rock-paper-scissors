@@ -8,14 +8,6 @@
 <body>
     <script>
 
-        // create 2 variables to keep track of players score and computer score
-        // create variable humanScore
-        // initialize humanScore with value of 0
-        let humanScore = 0;
-
-        // create variable computerScore
-        // initialize computerScore with value of 0
-        let computerScore = 0;
 
 
         // create function getComputerChoice
@@ -143,8 +135,6 @@
                 console.log("It's a tie!");
                 return;
             }
-            // print out whether you lose or win (ex: you lose! paper beats rock!)
-            // increment humanScore or computerScore based on the winner of the round
         }
 
         const humanSelection = getHumanChoice();
@@ -155,7 +145,97 @@
         
 
         // create function playGame
+        function playGame{
+            // Declare score variables humanScore and computerScore
+            let humanScore = 0;
+            let computerScore = 0;
+
+            // Declare playRound function
+            function playRound(humanChoice, computerChoice){
+                // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
+
+                // if rock vs scissors
+                if ((humanChoice == 'rock' && computerChoice == 'scissors') || (humanChoice == 'scissors' && computerChoice == 'rock')){
+                    // if the human chose rock, human wins
+                    if (humanChoice == 'rock'){
+                        humanScore += 1;
+                        console.log('you win! rock beats scissors!');
+                        return humanScore;
+                    }
+
+                    // if the computer chose rock, computer wins
+                    else if (computerChoice == 'rock'){
+                        // increment computerScore by one
+                        computerScore += 1;
+
+                        // print 'you lost! rock beats scissors!'
+                        console.log('you lost! rock beats scissors!');
+
+                        // return computerScore
+                        return computerScore;
+                    } 
+                }
+                // if its scissors vs paper
+                else if ((humanChoice == 'scissors' && computerChoice == 'paper') || (humanChoice == 'paper' && computerChoice == 'scissors')){
+                    // if humanChoice is scissors, human wins
+                    if (humanChoice == 'scissors'){
+                        // increment humanScore by one
+                        humanScore += 1;
+
+                        // print that you won
+                        console.log('You won! Scissors beats paper!');
+
+                        // return humanScore
+                        return humanScore;
+                    }
+
+                    // if the computerChoice is scissors, computer wins
+                    else if (computerChoice == 'scissors'){
+                        // increment computerScore by one
+                        computerScore += 1;
+
+                        // print 'you lost! rock beats scissors!'
+                        console.log('you lost! Scissors beats paper!');
+
+                        // return computerScore
+                        return computerScore;
+                    } 
+                }
+                // if its paper vs rock
+                else if ((humanChoice == 'paper' && computerChoice == 'rock') || (humanChoice == 'rock' && computerChoice == 'paper')){
+                    // if humanChoice is paper, human wins
+                    if (humanChoice == 'paper'){
+                        // increment humanScore by one
+                        humanScore += 1;
+
+                        // print victory, paper beats rock
+                        console.log('You won! Paper beats rock!');
+
+                        // return humanScore
+                        return humanScore;
+                    }
+
+                    // if computerChoice is paper, computer wins
+                    else if (computerChoice == 'paper'){
+                        // increment computerScore by one
+                        computerScore += 1;
+
+                        // print you lost, paper beats rock
+                        console.log('You lost! Paper beats rock!');
+
+                        // return computerScore
+                        return computerScore;
+                    }
+                }
+                // if it's a tie
+                else{
+                    console.log("It's a tie!");
+                    return;
+                }
+            }
+        }
         // move playRound function and score variables so theyre declared inside playGame function
+
     </script>
 </body>
 </html>
