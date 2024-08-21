@@ -114,7 +114,17 @@
             }
             // if its paper vs rock
             else if ((humanChoice == 'paper' && computerChoice == 'rock') || (humanChoice == 'rock' && computerChoice == 'paper')){
-                
+                // if humanChoice is paper, human wins
+                if (humanChoice == 'paper'){
+                    // increment humanScore by one
+                    humanScore += 1;
+
+                    // print victory, paper beats rock
+                    console.log('You won! Paper beats rock!');
+
+                    // return humanScore
+                    return humanScore;
+                }
             }
             // print out whether you lose or win (ex: you lose! paper beats rock!)
             // increment humanScore or computerScore based on the winner of the round
