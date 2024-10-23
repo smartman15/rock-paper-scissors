@@ -229,26 +229,7 @@ function playGame(){
 
     
 
-    // call playRound 5 times
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
+    
 
     // print humanScore and computerScore
     console.log(humanScore);
