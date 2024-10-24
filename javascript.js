@@ -1,16 +1,19 @@
 let div = document.querySelector('#container');
 div.addEventListener('click', (event) =>{
-    target = event.target;
+    let target = event.target;
 
     switch(target.id){
-        case('#rock'):
+        case 'rock':
             humanSelection = 'rock';
+            console.log(humanSelection);
             break;
-        case('#paper'):
+        case 'paper':
             humanSelection = 'paper';
+            console.log(humanSelection);
             break;
-        case('#scissors'):
+        case 'scissors':
             humanSelection = 'scissors';
+            console.log(humanSelection);
             break;
 
     }
