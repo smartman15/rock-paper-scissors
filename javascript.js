@@ -1,3 +1,15 @@
+let div = document.querySelector('#container');
+div.addEventListener('click', (event) =>{
+    target = event.target;
+
+    switch(target.id){
+        case('#rock'):
+        case('#paper'):
+        case('#scissors'):
+
+    }
+})
+
 
 // create function getComputerChoice
 function getComputerChoice(){
