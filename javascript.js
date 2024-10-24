@@ -4,8 +4,14 @@ div.addEventListener('click', (event) =>{
 
     switch(target.id){
         case('#rock'):
+            humanSelection = 'rock';
+            break;
         case('#paper'):
+            humanSelection = 'paper';
+            break;
         case('#scissors'):
+            humanSelection = 'scissors';
+            break;
 
     }
 })
