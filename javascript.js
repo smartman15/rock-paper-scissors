@@ -1,23 +1,4 @@
-let div = document.querySelector('#container');
-div.addEventListener('click', (event) =>{
-    let target = event.target;
 
-    switch(target.id){
-        case 'rock':
-            humanSelection = 'rock';
-            console.log(humanSelection);
-            break;
-        case 'paper':
-            humanSelection = 'paper';
-            console.log(humanSelection);
-            break;
-        case 'scissors':
-            humanSelection = 'scissors';
-            console.log(humanSelection);
-            break;
-
-    }
-})
 
 
 // create function getComputerChoice
@@ -158,8 +139,29 @@ function playGame(){
         }
     }
 
-    
+    // Create three buttons, one for each selection. Add an event listener to the buttons that call your playRound function 
+    // with the correct playerSelection every time a button is clicked. (you can keep the console.logs for this step)
 
+    let div = document.querySelector('#container');
+    div.addEventListener('click', (event) =>{
+    let target = event.target;
+    let humanSelection;
+    let computerSelection = getComputerChoice();
+    switch(target.id){
+        case 'rock':
+            humanSelection = 'rock';
+            playRound(humanSelection, computerSelection)
+            break;
+        case 'paper':
+            humanSelection = 'paper';
+            playRound(humanSelection, computerSelection)
+            break;
+        case 'scissors':
+            humanSelection = 'scissors';
+            playRound(humanSelection, computerSelection)
+            break;
+    }
+    })
     
 
     // print humanScore and computerScore
