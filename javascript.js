@@ -53,13 +53,12 @@ function playGame(){
     let humanScore = 0;
     let computerScore = 0;
 
-    
 
     // Declare playRound function
     function playRound(humanChoice, computerChoice){
         // select div with id result and assign to variable result
         let result = document.querySelector('#result');
-        
+
         // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
 
         // if rock vs scissors
@@ -67,6 +66,7 @@ function playGame(){
             // if the human chose rock, human wins
             if (humanChoice == 'rock'){
                 humanScore += 1;
+                result.textContent = 'you win! rock beats scissors!';
                 console.log('you win! rock beats scissors!');
                 return humanScore;
             }
@@ -77,6 +77,7 @@ function playGame(){
                 computerScore += 1;
 
                 // set result variable text to 'you lost! rock beats scissors!'
+                result.textContent = 'you lost! rock beats scissors!';
                 // print 'you lost! rock beats scissors!'
                 console.log('you lost! rock beats scissors!');
 
@@ -92,6 +93,7 @@ function playGame(){
                 humanScore += 1;
 
                 // print that you won
+                result.textContent = 'You won! Scissors beats paper!';
                 console.log('You won! Scissors beats paper!');
 
                 // return humanScore
@@ -104,6 +106,7 @@ function playGame(){
                 computerScore += 1;
 
                 // print 'you lost! rock beats scissors!'
+                result.textContent = 'you lost! Scissors beats paper!';
                 console.log('you lost! Scissors beats paper!');
 
                 // return computerScore
@@ -118,6 +121,7 @@ function playGame(){
                 humanScore += 1;
 
                 // print victory, paper beats rock
+                result.textContent = 'You won! Paper beats rock!';
                 console.log('You won! Paper beats rock!');
 
                 // return humanScore
@@ -130,6 +134,7 @@ function playGame(){
                 computerScore += 1;
 
                 // print you lost, paper beats rock
+                result.textContent = 'You lost! Paper beats rock!';
                 console.log('You lost! Paper beats rock!');
 
                 // return computerScore
@@ -138,6 +143,7 @@ function playGame(){
         }
         // if it's a tie
         else{
+            result.textContent = "It's a tie!";
             console.log("It's a tie!");
             return;
         }
