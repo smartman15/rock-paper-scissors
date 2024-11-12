@@ -64,7 +64,8 @@ function playGame(){
         let cScore = document.querySelector('#computer').querySelector('#computerScore');
 
         // display initial scores
-        
+        pScore.textContent = humanScore;
+        cScore.textContent = computerScore;
 
         // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
 
