@@ -63,6 +63,9 @@ function playGame(){
         let pScore = document.querySelector('#player').querySelector('#playerScore');
         let cScore = document.querySelector('#computer').querySelector('#computerScore');
 
+        // display initial scores
+        
+
         // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
 
         // if rock vs scissors
@@ -73,6 +76,7 @@ function playGame(){
                 result.textContent = 'you win! rock beats scissors!';
                 console.log('you win! rock beats scissors!');
                 // set textContent of pScore to humanScore
+                pScore.textContent = humanScore;
 
                 return humanScore;
             }
@@ -87,6 +91,7 @@ function playGame(){
                 // print 'you lost! rock beats scissors!'
                 console.log('you lost! rock beats scissors!');
                 // set textContent of cScore to computerScore
+                cScore.textContent = computerScore;
 
                 // return computerScore
                 return computerScore;
@@ -103,6 +108,7 @@ function playGame(){
                 result.textContent = 'You won! Scissors beats paper!';
                 console.log('You won! Scissors beats paper!');
                 // set textContent of pScore to humanScore
+                pScore.textContent = humanScore;
 
                 // return humanScore
                 return humanScore;
@@ -117,6 +123,7 @@ function playGame(){
                 result.textContent = 'you lost! Scissors beats paper!';
                 console.log('you lost! Scissors beats paper!');
                 // set textContent of cScore to computerScore
+                cScore.textContent = computerScore;
 
                 // return computerScore
                 return computerScore;
@@ -133,6 +140,7 @@ function playGame(){
                 result.textContent = 'You won! Paper beats rock!';
                 console.log('You won! Paper beats rock!');
                 // set textContent of pScore to humanScore
+                pScore.textContent = humanScore;
 
                 // return humanScore
                 return humanScore;
@@ -148,6 +156,7 @@ function playGame(){
                 console.log('You lost! Paper beats rock!');
 
                 // set textContent of cScore to computerScore
+                cScore.textContent = computerScore;
 
                 // return computerScore
                 return computerScore;
