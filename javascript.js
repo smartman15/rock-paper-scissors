@@ -57,6 +57,9 @@ function playGame(){
 
     // Declare playRound function
     function playRound(humanChoice, computerChoice){
+        // select div with id result and assign to variable result
+        let result = document.querySelector('#result');
+        
         // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
 
         // if rock vs scissors
@@ -73,6 +76,7 @@ function playGame(){
                 // increment computerScore by one
                 computerScore += 1;
 
+                // set result variable text to 'you lost! rock beats scissors!'
                 // print 'you lost! rock beats scissors!'
                 console.log('you lost! rock beats scissors!');
 
