@@ -58,7 +58,10 @@ function playGame(){
     function playRound(humanChoice, computerChoice){
         // select div with id result and assign to variable result
         let result = document.querySelector('#result');
+
         // select divs with id player, computer and select children with id playerScore, computerScore
+        let pScore = document.querySelector('#player').querySelector('#playerScore');
+        let cScore = document.querySelector('#computer').querySelector('#computerScore');
 
         // create if statements for when rock beats scissors, scissors beats paper, paper beats rock, or tie
 
@@ -129,7 +132,7 @@ function playGame(){
                 result.textContent = 'You won! Paper beats rock!';
                 console.log('You won! Paper beats rock!');
                 // set textContent of span with id playerScore to humanScore
-                
+
                 // return humanScore
                 return humanScore;
             }
