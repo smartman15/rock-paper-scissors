@@ -72,7 +72,8 @@ function playGame(){
                 humanScore += 1;
                 result.textContent = 'you win! rock beats scissors!';
                 console.log('you win! rock beats scissors!');
-                // set textContent of span with id playerScore to humanScore
+                // set textContent of pScore to humanScore
+
                 return humanScore;
             }
 
@@ -85,7 +86,7 @@ function playGame(){
                 result.textContent = 'you lost! rock beats scissors!';
                 // print 'you lost! rock beats scissors!'
                 console.log('you lost! rock beats scissors!');
-                // set textContent of span with id computerScore to computerScore
+                // set textContent of cScore to computerScore
 
                 // return computerScore
                 return computerScore;
@@ -101,7 +102,7 @@ function playGame(){
                 // print that you won
                 result.textContent = 'You won! Scissors beats paper!';
                 console.log('You won! Scissors beats paper!');
-                // set textContent of span with id playerScore to humanScore
+                // set textContent of pScore to humanScore
 
                 // return humanScore
                 return humanScore;
@@ -115,7 +116,7 @@ function playGame(){
                 // print 'you lost! rock beats scissors!'
                 result.textContent = 'you lost! Scissors beats paper!';
                 console.log('you lost! Scissors beats paper!');
-                // set textContent of span with id computerScore to computerScore
+                // set textContent of cScore to computerScore
 
                 // return computerScore
                 return computerScore;
@@ -131,7 +132,7 @@ function playGame(){
                 // print victory, paper beats rock
                 result.textContent = 'You won! Paper beats rock!';
                 console.log('You won! Paper beats rock!');
-                // set textContent of span with id playerScore to humanScore
+                // set textContent of pScore to humanScore
 
                 // return humanScore
                 return humanScore;
@@ -146,7 +147,7 @@ function playGame(){
                 result.textContent = 'You lost! Paper beats rock!';
                 console.log('You lost! Paper beats rock!');
 
-                // set textContent of span with id computerScore to computerScore
+                // set textContent of cScore to computerScore
 
                 // return computerScore
                 return computerScore;
