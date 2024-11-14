@@ -75,7 +75,6 @@ function playGame(){
             if (humanChoice == 'rock'){
                 humanScore += 1;
                 result.textContent = 'you win! rock beats scissors!';
-                console.log('you win! rock beats scissors!');
                 // set textContent of pScore to humanScore
                 pScore.textContent = humanScore;
 
@@ -90,7 +89,6 @@ function playGame(){
                 // set result variable text to 'you lost! rock beats scissors!'
                 result.textContent = 'you lost! rock beats scissors!';
                 // print 'you lost! rock beats scissors!'
-                console.log('you lost! rock beats scissors!');
                 // set textContent of cScore to computerScore
                 cScore.textContent = computerScore;
 
@@ -107,7 +105,6 @@ function playGame(){
 
                 // print that you won
                 result.textContent = 'You won! Scissors beats paper!';
-                console.log('You won! Scissors beats paper!');
                 // set textContent of pScore to humanScore
                 pScore.textContent = humanScore;
 
@@ -122,7 +119,6 @@ function playGame(){
 
                 // print 'you lost! rock beats scissors!'
                 result.textContent = 'you lost! Scissors beats paper!';
-                console.log('you lost! Scissors beats paper!');
                 // set textContent of cScore to computerScore
                 cScore.textContent = computerScore;
 
@@ -139,7 +135,6 @@ function playGame(){
 
                 // print victory, paper beats rock
                 result.textContent = 'You won! Paper beats rock!';
-                console.log('You won! Paper beats rock!');
                 // set textContent of pScore to humanScore
                 pScore.textContent = humanScore;
 
@@ -154,7 +149,6 @@ function playGame(){
 
                 // print you lost, paper beats rock
                 result.textContent = 'You lost! Paper beats rock!';
-                console.log('You lost! Paper beats rock!');
 
                 // set textContent of cScore to computerScore
                 cScore.textContent = computerScore;
@@ -166,7 +160,6 @@ function playGame(){
         // if it's a tie
         else{
             result.textContent = "It's a tie!";
-            console.log("It's a tie!");
             return;
         }
     }
@@ -196,9 +189,6 @@ function playGame(){
     })
     
 
-    // print humanScore and computerScore
-    console.log(humanScore);
-    console.log(computerScore);
     
 }
 // move playRound function and score variables so theyre declared inside playGame function
