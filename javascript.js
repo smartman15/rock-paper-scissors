@@ -62,11 +62,11 @@ function playGame(){
         if(humanScore == 5 || computerScore == 5){
             // if human wins, print human won
             if(humanScore == 5){
-                winner.textContent = 'You win the match!! Congratulations!';
+                winner.textContent = 'You win the game!! Congratulations!';
             }
             // else if computerwins, print computer won
             else{
-                winner.textContent= 'You lost! Computer wins the match!';
+                winner.textContent= 'You lost! Computer wins the game!';
             }
         }
 
