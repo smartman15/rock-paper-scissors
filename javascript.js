@@ -188,6 +188,11 @@ function playGame(){
     }
     })
     
+    // create if statement to check once one player reaches 5 points
+    if(humanScore == 5 || computerScore == 5){
+        // if human wins, print human won
+        // else if computerwins, print computer won
+    }
 
     
 }
