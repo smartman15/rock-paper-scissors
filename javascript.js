@@ -56,6 +56,20 @@ function playGame(){
 
     // Declare playRound function
     function playRound(humanChoice, computerChoice){
+        // select the #winner div
+        let winner = document.querySelector('#winner');
+        // create if statement to check once one player reaches 5 points
+        if(humanScore == 5 || computerScore == 5){
+            // if human wins, print human won
+            if(humanScore == 5){
+                winner.textContent = 'You win the match!! Congratulations!';
+            }
+            // else if computerwins, print computer won
+            else{
+                winner.textContent= 'You lost! Computer wins the match!';
+            }
+        }
+
         // select div with id result and assign to variable result
         let result = document.querySelector('#result');
 
@@ -188,11 +202,7 @@ function playGame(){
     }
     })
     
-    // create if statement to check once one player reaches 5 points
-    if(humanScore == 5 || computerScore == 5){
-        // if human wins, print human won
-        // else if computerwins, print computer won
-    }
+    
 
     
 }
